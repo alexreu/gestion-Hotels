@@ -7,9 +7,9 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\HotelsRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\ClientsRepository")
  */
-class Hotels
+class Clients
 {
     /**
      * @ORM\Id()
@@ -29,17 +29,12 @@ class Hotels
     private $adresse;
 
     /**
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="string", length=10)
      */
-    private $tarif;
+    private $telephone;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Secteurs")
-     */
-    private $secteur;
-
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Chambres", mappedBy="id_hotel")
+     * @ORM\OneToMany(targetEntity="App\Entity\Chambres", mappedBy="id_client")
      */
     private $id_chambre;
 
@@ -77,26 +72,14 @@ class Hotels
         return $this;
     }
 
-    public function getTarif(): ?float
+    public function getTelephone(): ?string
     {
-        return $this->tarif;
+        return $this->telephone;
     }
 
-    public function setTarif(float $tarif): self
+    public function setTelephone(string $telephone): self
     {
-        $this->tarif = $tarif;
-
-        return $this;
-    }
-
-    public function getSecteur(): ?Secteurs
-    {
-        return $this->secteur;
-    }
-
-    public function setSecteur(?Secteurs $secteur): self
-    {
-        $this->secteur = $secteur;
+        $this->telephone = $telephone;
 
         return $this;
     }
@@ -113,7 +96,7 @@ class Hotels
     {
         if (!$this->id_chambre->contains($idChambre)) {
             $this->id_chambre[] = $idChambre;
-            $idChambre->setIdHotel($this);
+            $idChambre->setIdClient($this);
         }
 
         return $this;
@@ -124,8 +107,8 @@ class Hotels
         if ($this->id_chambre->contains($idChambre)) {
             $this->id_chambre->removeElement($idChambre);
             // set the owning side to null (unless already changed)
-            if ($idChambre->getIdHotel() === $this) {
-                $idChambre->setIdHotel(null);
+            if ($idChambre->getIdClient() === $this) {
+                $idChambre->setIdClient(null);
             }
         }
 

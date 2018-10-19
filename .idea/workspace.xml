@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="270c3077-76da-4fe3-ba6a-b2f0e43373f7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Entity/Clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,12 +16,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Clients.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Clients.php">
+      <file leaf-file-name="Hotels.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Hotels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
-            </state>
+            <state relative-caret-position="-1512" />
           </provider>
         </entry>
       </file>
@@ -178,12 +176,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Gestion-Hotels" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion-Hotels" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -220,24 +212,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539929616411</updated>
-      <workItem from="1539929618174" duration="4393000" />
+      <workItem from="1539929618174" duration="5326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4393000" />
+    <option name="totallyTimeSpent" value="5326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="342" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5002667" side_tool="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5002667" side_tool="true" weight="0.36643836" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49973333" visible="true" weight="0.36643836" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49973333" visible="true" weight="0.36643836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32990867" />
@@ -289,6 +281,16 @@
         <state relative-caret-position="196">
           <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Chambres.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1107" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Hotels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1512" />
       </provider>
     </entry>
   </component>
