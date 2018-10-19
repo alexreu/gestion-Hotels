@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Hotel;
+use App\Entity\Hotels;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
- * @method Hotel|null find($id, $lockMode = null, $lockVersion = null)
- * @method Hotel|null findOneBy(array $criteria, array $orderBy = null)
- * @method Hotel[]    findAll()
- * @method Hotel[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Hotels|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Hotels|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Hotels[]    findAll()
+ * @method Hotels[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class HotelRepository extends ServiceEntityRepository
+class HotelsRepository extends ServiceEntityRepository
 {
     public function __construct(RegistryInterface $registry)
     {
-        parent::__construct($registry, Hotel::class);
+        parent::__construct($registry, Hotels::class);
     }
 
 //    /**
-//     * @return Hotel[] Returns an array of Hotel objects
+//     * @return Hotels[] Returns an array of Hotels objects
 //     */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class HotelRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Hotel
+    public function findOneBySomeField($value): ?Hotels
     {
         return $this->createQueryBuilder('h')
             ->andWhere('h.exampleField = :val')

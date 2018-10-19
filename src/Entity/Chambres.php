@@ -27,7 +27,7 @@ class Chambres
     private $statut_menage;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Hotel", inversedBy="id_chambre")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Hotels", inversedBy="id_chambre")
      * @ORM\JoinColumn(nullable=false)
      */
     private $id_hotel;
@@ -61,12 +61,12 @@ class Chambres
         return $this;
     }
 
-    public function getIdHotel(): ?Hotel
+    public function getIdHotel(): ?Hotels
     {
         return $this->id_hotel;
     }
 
-    public function setIdHotel(?Hotel $id_hotel): self
+    public function setIdHotel(?Hotels $id_hotel): self
     {
         $this->id_hotel = $id_hotel;
 
