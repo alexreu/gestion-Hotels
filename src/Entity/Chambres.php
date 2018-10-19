@@ -32,6 +32,12 @@ class Chambres
      */
     private $id_hotel;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Clients", inversedBy="id_chambre")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $id_client;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +75,18 @@ class Chambres
     public function setIdHotel(?Hotels $id_hotel): self
     {
         $this->id_hotel = $id_hotel;
+
+        return $this;
+    }
+
+    public function getIdClient(): ?Clients
+    {
+        return $this->id_client;
+    }
+
+    public function setIdClient(?Clients $id_client): self
+    {
+        $this->id_client = $id_client;
 
         return $this;
     }
